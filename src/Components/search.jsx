@@ -82,7 +82,7 @@ export default function Search() {
         </div>
       )}
                 <div><audio controls>
-                <source src="https://cdn.islamic.network/quran/audio/1/ar.alafasy/11.mp3" type="audio/mp3" />
+                <source src="https://cdn.islamic.network/quran/audio/125/ar.alafasy/11.mp3" type="audio/mp3" />
                 Your browser does not support the audio element.
                 </audio></div> 
                 {/* {ayah && <p>{ayah}</p>} */}
