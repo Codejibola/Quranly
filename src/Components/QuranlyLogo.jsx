@@ -1,6 +1,6 @@
 // src/components/QuranlyLogo.jsx
 import React from 'react';
-import './QuranlyLogo.css'; // ensure this CSS file exists
+import './QuranlyLogo.css'; 
 
 export default function QuranlyLogo({ className = "" }) {
   return (

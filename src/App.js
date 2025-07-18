@@ -1,7 +1,7 @@
 // src/App.jsx
 import React, { useState, useEffect } from 'react';
-import Loading from './Component/Quranly-loadingPage';
-import MainContent from './Component/mainContent';
+import Loading from './Components/Quranly-loadingPage';
+import MainContent from './Components/mainContent';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
