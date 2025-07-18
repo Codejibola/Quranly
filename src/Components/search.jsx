@@ -4,8 +4,7 @@ export default function Search() {
     const [surah, setSurah] = useState('');
     const [ayah, setAyah] = useState([]);
     const [i, setI] = useState(0);
-    // const [isPaused, setIsPaused] = useState(false);
-    // const audioRef = useRef(null)
+    
 
     async function searchSurah() {
         try {
@@ -24,17 +23,7 @@ export default function Search() {
         setI((prev)=>prev += 1)
     }
 
-    // function togglePause() {
-    //     if (!audioRef.current) return;
     
-    //     if (audioRef.current.paused) {
-    //       audioRef.current.play();
-    //       setIsPaused(false);
-    //     } else {
-    //       audioRef.current.pause();
-    //       setIsPaused(true);
-    //     }
-    //   }
     return (
         <div style={{
             padding: '40px',
@@ -93,7 +82,7 @@ export default function Search() {
         </div>
       )}
                 <div><audio controls>
-                <source src="https://cdn.islamic.network/quran/audio/128/ar.alafasy/11.mp3" type="audio/mp3" />
+                <source src="https://cdn.islamic.network/quran/audio/1/ar.alafasy/11.mp3" type="audio/mp3" />
                 Your browser does not support the audio element.
                 </audio></div> 
                 {/* {ayah && <p>{ayah}</p>} */}
