@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.jsx
+import React, { useState, useEffect } from 'react';
+import Loading from './Component/Quranly-loadingPage';
+import MainContent from './Component/mainContent';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 2500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  return isLoading
+    ? <Loading message="Preparing Quranly…" />
+    : <MainContent />;
 }
 
 export default App;
+
