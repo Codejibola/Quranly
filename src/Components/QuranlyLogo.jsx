@@ -1,13 +1,13 @@
 // src/components/QuranlyLogo.jsx
 import React from 'react';
-import './QuranlyLogo.css'; 
 
 export default function QuranlyLogo({ className = "" }) {
   return (
     <svg
-      className={className}
+      className={`w-full max-w-[300px] h-auto ${className}`}
       viewBox="0 0 200 200"
       xmlns="http://www.w3.org/2000/svg"
+      preserveAspectRatio="xMidYMid meet"
     >
       <path
         d="M10,160 L10,80 C10,60 40,20 100,20 C160,20 190,60 190,80 L190,160 L100,120 Z"
